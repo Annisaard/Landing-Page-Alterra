@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Quicksand:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #19345e;
+  --second-color: #f47522;
+  --third-color: #ffffff;
+  --text-color: #1e1e1e;
+  --background-second: #e7ebfc;
+  --button-hover-color: #19345e;
+
+  --font-size-h1: 3.85rem; /*62px*/
+  --line-height-h1: 4.3rem;
+  --font-size-h2: 3.25rem; /*52px*/
+  --line-height-h2: 3.75rem;
+  --font-size-h3: 2.75rem; /*42px*/
+  --font-size-h4: 1.5rem; /*24px*/
+  --font-size-h5: 1.125rem; /*18px*/
+  --line-height-h5: 1.75rem;
+
+  --font-size-p-content: 1.25rem; /*20px*/
+  --line-height-p-content: 2rem;
+  --font-size-p-biasa: 1rem; /*16px*/
+  --line-height-p-biasa: 1.25rem;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  font-weight: 700;
+  color: var(--main-color);
+}
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  color: var(--main-color);
+}
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: 700;
+  color: var(--main-color);
+}
+h5 {
+  font-weight: 500;
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-h5);
+}
+/* ------navbar------------- */
+.navbar {
+  background-color: #fff;
+}
+.nav-link {
+  font-size: var(--font-size-p-biasa);
+  font-weight: 500;
+  color: var(--text-color);
+  line-height: var(--line-height-p-biasa);
+}
+.nav-link:hover {
+  color: var(--main-color);
+}
+.logo-navbar {
+  max-width: 10vw;
+  height: auto;
+}
+/* ----section hero-------- */
+.hero {
+  padding: 10rem 0rem;
+  background: var(--background-second);
+}
+.content h1 {
+  font-weight: 700;
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  text-transform: capitalize;
+  color: #19345e;
+}
+.content p {
+  font-size: var(--font-size-h4);
+  line-height: 2rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.profile-png {
+  width: 80px;
+  height: 80px;
+}
+.btn {
+  align-items: center;
+  border-radius: 1px;
+  border: none;
+  background: #19345e;
+  color: #fff;
+  font-size: var(--font-size-p-biasa);
+  width: 18vw;
+  height: 9vh;
+  padding: 5px;
+}
+
+.btn-lg:hover {
+  background-color: #0b234a;
+  color: #fff;
+}
+/* ---end section hero----- */
+/* ---section-achievement--- */
+.section-achievement {
+  padding: 5rem 0rem;
+  background: var(--main-color);
+}
+.section-title h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  color: var(--third-color);
+}
+.section-title p {
+  font-size: var(--font-size-p-biasa);
+  line-height: var(--line-height-p-biasa);
+  color: var(--third-color);
+  font-weight: 400;
+}
+.text-desc h2 {
+  color: var(--third-color);
+}
+.text-desc p {
+  color: var(--third-color);
+}
+.garis-vertical {
+  border-left: 1px solid rgb(90, 89, 89);
+  height: 13vh;
+}
+/* ----end section-achievement-- */
+/* ---headline---- */
+.headline {
+  padding: 8rem 0rem;
+}
+
+.gbr-text {
+  aspect-ratio: 0.8;
+  width: 60%;
+
+  background-image: linear-gradient(
+      rgba(25, 52, 94, 0.6),
+      rgba(25, 52, 94, 0.6)
+    ),
+    url(/assets/stock_photo.jpg);
+
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+}
+.gbr-text p {
+  display: flex;
+  align-items: flex-end;
+}
+.content-section-headline p {
+  font-size: var(--font-size-p-content);
+  color: var(--text-color);
+  line-height: var(--line-height-p-content);
+}
+a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: var(--font-size-h5);
+}
+.icon-play {
+  background-color: var(--background-second);
+  border: 2px solid #0b234a;
+  box-sizing: content-box;
+}
+.icon-play:hover {
+  background: linear-gradient(
+      315deg,
+      rgba(148, 164, 183, 0.6) 0%,
+      rgba(149, 101, 101, 0) 100%
+    ),
+    #e7ebfc;
+}
+/* --end headline--- */
+
+/* ---fitur--- */
+.icon {
+  margin-bottom: 1rem;
+}
+.icon-fitur {
+  width: 25px;
+  height: 25px;
+}
+.column {
+  margin-right: 6rem;
+}
+.gbr-fitur img {
+  aspect-ratio: 0.9;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+/* ---end fitur-- */
+
+/* -----card---- */
+.cards {
+  padding: 8rem 0rem;
+}
+
+.sub-title h4 {
+  font-weight: 400;
+}
+.icons {
+  width: 30px;
+  height: 30px;
+}
+.arrow {
+  margin-top: 14rem;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.card-body {
+  padding: 1rem 0rem;
+}
+.main-color {
+  background: var(--background-second);
+  height: 50px;
+  width: 50px;
+  display: flex; /* displays flex-items (children) inline */
+  justify-content: center; /* horizontally centered */
+  align-items: center; /* vertically centered */
+}
+.main-color:hover {
+  box-shadow: 0 0 10px rgba(25, 52, 94, 0.6);
+}
+
+/* ---end card-- */
+/* ---doodle--- */
+.gbr-doodle {
+  aspect-ratio: 1;
+  width: 60%;
+  object-fit: cover;
+}
+/* --end doodle */
+
+/* closing */
+.closing {
+  margin-top: 10rem;
+  background: #e7ebfc;
+  padding: 8rem 0rem;
+}
+.text-closing {
+  padding-top: 8rem;
+}
+
+.divider {
+  width: 80vw;
+  border: 1px solid #b4b4b4;
+  background-color: #b4b4b4;
+}
+.paragraf-h5 {
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-h5);
+  margin-left: 4rem;
+}
+.logo-perusahaan {
+  max-width: 10vw;
+  height: auto;
+}
+/* -------footer------------ */
+footer {
+  background: #19345e;
+  color: #fff;
+  padding: 1rem 0rem;
+}
+h5 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+/* p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  max-width: 30vw;
+} */
+.text-footer {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  max-width: 30vw;
+  color: #fff;
+}
+.btn {
+  color: #fff;
+  padding-left: 0;
+}
+.logo-footer {
+  max-width: 10vw;
+  margin-bottom: 1rem;
+}
+.menu-list {
+  margin-top: 6rem;
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+  padding-left: 1rem;
+}
+.line {
+  border-bottom: 1px solid #fff;
+  mix-blend-mode: normal;
+  opacity: 0.08;
+}
+
+/* ------RESPONSIVE---- */
+/* ------tablets------------ */
+@media screen and (max-width: 922px) {
+  .content h1 {
+    font-size: var(--font-size-h3);
+    line-height: 3.5rem;
+  }
+  .content p {
+    font-size: var(--font-size-h5);
+  }
+  .btn {
+    font-size: 0.85rem;
+    width: 25vw;
+    height: 5vh;
+  }
+  h2 {
+    font-size: var(--font-size-h3);
+    line-height: 3.5rem;
+  }
+  h4 {
+    font-size: var(--font-size-h5);
+    font-weight: 700;
+  }
+  p {
+    font-size: 0.85rem;
+  }
+  .section-title h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--third-color);
+  }
+  .section-title p {
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+  .garis-vertical {
+    border: none;
+  }
+  .logo-perusahaan {
+    max-width: 15vw;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content h1 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 3rem; /* 40px */
+  }
+  .content p {
+    font-size: var(--font-size-p-biasa);
+    line-height: 1.5rem;
+  }
+  h2 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+  h4 {
+    font-size: var(--font-size-h5);
+  }
+  .section-title h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--third-color);
+  }
+  .content-section-headline p {
+    font-size: var(--font-size-p-biasa);
+    line-height: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    font-size: var(--font-size-p-biasa);
+  }
+  .paragraf-h5 {
+    font-size: var(--font-size-h5);
+    line-height: var(--line-height-h5);
+    margin: 0;
+    width: 100%;
+  }
+  .arrow {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+  .logo-perusahaan {
+    max-width: 24vw;
+    height: auto;
+  }
+  .gbr-doodle {
+    aspect-ratio: 1;
+    width: 40%;
+    object-fit: cover;
+  }
+  .btn {
+    font-size: 0.75rem;
+    width: 48vw;
+    height: 5vh;
+  }
+  .logo-navbar {
+    max-width: 19vw;
+    height: auto;
+  }
+  .logo-footer {
+    max-width: 19vw;
+    margin-bottom: 1rem;
+  }
+  .text-footer {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column wrap-reverse;
+  }
+  li {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+}
